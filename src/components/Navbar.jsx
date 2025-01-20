@@ -11,7 +11,7 @@ function Navbar() {
     };
 
   return (
-    <div className="text-white flex justify-between items-center w-full max-w-none mx-auto px-4 bg-[#080808] fixed top-0 left-0 font-[Poppins] text-[15px] font-[500]">
+    <div className="text-white flex justify-between items-center w-full max-w-none mx-auto px-4 bg-[#080808]  font-[Poppins] text-[15px] font-[500]">
         <img src = "namelogo.avif" alt = "logo picture" className="h-20" />
         <ul className="hidden lg:flex flex-1 justify-center space-x-4 flex-wrap"> 
             <li className="p-4">About Me</li>
