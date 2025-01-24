@@ -25,7 +25,7 @@ function Experience() {
 
   return (
     <div className="text-white mt-4 font-[Poppins] w-full">
-      <h1 className="text-center pt-16 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Experience</h1>
+      <h1 className="text-center sm:text-left sm:pl-16 pt-16 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Experience</h1>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 pt-28">
         {exp.map((experience, index) => (
           <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">

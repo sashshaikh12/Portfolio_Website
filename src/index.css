@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-  background-color: #1e232d ;
+body {
+  background-color: #1e232d;
+}
+
+.swiper-pagination-bullet {
+  background-color: rgba(255, 255, 255, 0.5) !important; /* Default state - semi-transparent white */
+  transition: background-color 0.3s ease !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: white !important; /* Active state - solid white */
 }
