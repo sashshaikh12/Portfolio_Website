@@ -2,6 +2,7 @@ import React from "react";
 import { ReactTyped } from "react-typed";
 import { SiCodeforces, SiCodechef, SiLeetcode, SiGithub, SiLinkedin } from "react-icons/si";
 
+
 function Hero() {
 
     return(

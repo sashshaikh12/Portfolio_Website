@@ -91,7 +91,7 @@ function About() {
     {/* Tech skills */}
 
     <h1 className="pt-28 text-[22px] font-[600] text-center mx-auto">Tech Skills</h1>
-    <div className="flex flex-wrap justify-center pt-10 gap-4">
+    <div className="flex flex-wrap justify-center pt-10 gap-4 pb-10 ">
         {skills.map((skill) => (
                 <div key={skill.name} className="bg-gray-800 p-4 rounded-lg flex flex-col items-center  w-20 sm:w-40 hover:rounded-full hover:bg-white hover:text-black">
                     <img src={skill.url} alt={skill.name} className="h-8 w-8 sm:h-12 sm:w-12 object-contain" />
