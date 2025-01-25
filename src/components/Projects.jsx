@@ -64,7 +64,7 @@ function Projects() {
 
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-          <div className="flex justify-center h-full">
+          <div className="pb-24 flex justify-center h-full">
             <div className="bg-gray-800 flex flex-col justify-between items-center w-full max-w-[350px] min-w-[250px] h-auto p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mx-4">
               <img
                 src={project.image_url}
@@ -72,8 +72,8 @@ function Projects() {
                 className="w-full h-[200px] object-cover rounded-lg mb-4"
               />
               <div className="flex flex-col flex-grow">
-                <h2 className="text-xl font-semibold mb-2 text-center">{project.title}</h2>
-                <p className="text-sm text-gray-400 mb-4 text-justify">
+                <h2 className="text-xl font-semibold mb-7 text-center">{project.title}</h2>
+                <p className="text-sm text-gray-400 mb-6 text-justify">
                   {project.description}
                 </p>
                 <p className="text-sm text-gray-300 mb-4">
