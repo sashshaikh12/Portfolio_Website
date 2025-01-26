@@ -12,7 +12,7 @@ function Navbar() {
 
   return (
     <div className="text-white flex justify-between items-center w-full max-w-none mx-auto px-4 bg-[#080808]  font-[Poppins] text-[15px] font-[500]">
-        <img src = "namelogo.avif" alt = "logo picture" className="h-20 hover:cursor-pointer" />
+        <a href="/"><img src = "namelogo.avif" alt = "logo picture" className="h-20 hover:cursor-pointer" /></a>
         <ul className="hidden lg:flex flex-1 justify-center space-x-4 flex-wrap"> 
             <a href = "#About"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">About Me</li></a>
             <a href = "#Experience"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Experience</li></a>
@@ -21,7 +21,7 @@ function Navbar() {
             <a href = "#Certifications"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Certifications</li></a>
             <a href = "#Contact"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Contact</li></a>
         </ul>
-        <button className="hidden lg:block p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Resume</button>
+        <a href="https://drive.google.com/file/d/1YAPP8R59e5zHDXWGUG4RyST61aZZZh8a/view?usp=sharing" className="hidden lg:block p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Resume</a>
         <div className="block lg:hidden">
             {showMenu ? <GiHamburgerMenu size={20} onClick={handleMenu}/> : <IoCloseSharp size={20} onClick={handleMenu}/>}
         </div>

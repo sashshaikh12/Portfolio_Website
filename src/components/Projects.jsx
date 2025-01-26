@@ -9,14 +9,14 @@ import 'swiper/css/scrollbar';
 function Projects() {
   const projects = [
     {
-      url: "",
+      url: "https://github.com/sashshaikh12/campus-event-management",
       title: "Campus Resource and Event Management System",
       description: "The Campus Resource and Event Management System is built using Express, Node.js, React, and SQL. It allows club heads to request events, which HODs approve, making them visible college-wide. The system features room management and faculty-driven attendance tracking to monitor student participation. Students with frequent absences are automatically blacklisted, with an option to appeal. Advanced SQL techniques, including 3NF normalization, JOINs, nested queries, triggers, and procedures, ensure efficient data handling and smooth functionality.",
       techStack: "ReactJs, NodeJs, ExpressJs, SQL",
       image_url: "dbms_project.jpeg",
     },
     {
-      url: "",
+      url: "https://github.com/sashshaikh12/DSA-Project ",
       title: "UNO Card Game",
       description: "Developed a terminal-based Uno card game where the user plays against the computer, built for a DSA course project using only C. The game uses linked lists for card distribution and stacks for the draw and discard piles. It implements all Uno rules, including skips, reverses, and wild cards, with colored card displays in the terminal. This project highlights efficient use of data structures to manage game mechanics and player turns.",
       techStack: "C language",
@@ -37,13 +37,14 @@ function Projects() {
       image_url: "queue_pic.jpeg",
     },
     {
-      url: "",
+      url: "https://github.com/sashshaikh12/Portfolio_Website",
       title: "Portfolio Website",
       description: "This website is a platform that showcases my experiences, skills, projects, and certifications, offering insight into my professional journey and achievements. It also includes a contact section, making it easy for people to connect with me for opportunities or collaborations.",
       techStack: "ReactJs, TailwindCSS",
       image_url: "portfolio_pic.jpeg",
     }
   ];
+
 
   return (
     <div className="text-white mt-24 font-[Poppins] w-full bg-[#080808]" id="Projects">
@@ -79,12 +80,14 @@ function Projects() {
                 <p className="text-sm text-gray-300 mb-4">
                   <strong>Tech Stack:</strong> {project.techStack}
                 </p>
-                <a
-              href={project.url}
-              className="mt-auto inline-block bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
-            >
-              Source Code
-            </a>
+                {project.url && (
+                    <a
+                      href={project.url}
+                      className="mt-auto inline-block bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
+                    >
+                      Source Code
+                    </a>
+                  )}
               </div>
             </div>
           </div>

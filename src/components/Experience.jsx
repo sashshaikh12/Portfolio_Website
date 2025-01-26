@@ -10,7 +10,8 @@ function Experience() {
       Company: "Alcoding Club",
       Description:
         "Alcoding Club is a technical club of my college and the official Competitive Programming club of the college. I am a part of Technical Domain in this club. I help in organising Club hackathons and competitions. I also help in framing questions for the competitions and help in organising workshops and webinars",
-      url: "alcoding.png"
+      url: "alcoding.png",
+      site_url: "https://clubs.pes.edu/the-alcoding-club/",
     },
     {
       StartDate: "March 2023",
@@ -19,7 +20,8 @@ function Experience() {
       Company: "Nexus Club",
       Description:
         "Nexus Club is a technical club of my college. I am a mentor of competitive programming in this club. I teach students about data structures and algorithms and help them to improve their problem solving skills. I also help in organising Club hackathons and competitions",
-      url: "nexus.png"
+      url: "nexus.png",
+      site_url: "https://nexus-pes.vercel.app/",
     }
   ];
 
@@ -41,7 +43,7 @@ function Experience() {
             <h2 className="pt-2 text-xl font-semibold mb-4">{experience.Role}</h2>
             <p className="pt-2 text-base text-gray-400 mb-4">{experience.Description}</p>
             <div className="flex justify-end">
-              <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" />
+              <a href = {experience.site_url}><FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" /></a>
             </div>
           </div>
         ))}
