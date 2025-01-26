@@ -21,3 +21,15 @@ body {
   object-fit: cover; /* Ensures the image covers the entire area */
   border-radius: 50%; /* Ensures the image is circular */
 }
+
+/* Custom CSS for icon sizes */
+.icon-size {
+  font-size: 22px; /* Default size for icons */
+}
+
+@media (min-width: 640px) {
+  /* Size for icons when screen width is at least 640px (sm breakpoint) */
+  .icon-size {
+    font-size: 28px;
+  }
+}
