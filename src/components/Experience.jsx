@@ -41,7 +41,7 @@ function Experience() {
             <h2 className="pt-2 text-xl font-semibold mb-4">{experience.Role}</h2>
             <p className="pt-2 text-base text-gray-400 mb-4">{experience.Description}</p>
             <div className="flex justify-end">
-              <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300" />
+              <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" />
             </div>
           </div>
         ))}

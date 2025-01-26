@@ -31,7 +31,7 @@ function Certifications() {
       <h1 className="underline sm:no-underline pb-16 text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Certifications</h1>
       <div className="flex flex-wrap items-center sm:items-start md:pl-16 pt-8 gap-14">
         {certifications.map((cert, index) => (
-          <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full  md:w-1/3 lg:w-1/4 sm:mb-28 mb-20">
+          <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full md:w-1/3 lg:w-1/4 sm:mb-28 mb-20 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <div className="bg-gray-700 h-48 flex items-center justify-center">
               <img src={cert.imageUrl} alt={cert.title} className="w-full h-full object-contain" />
             </div>
@@ -43,7 +43,7 @@ function Certifications() {
               <div className="flex justify-center">
                 <a
                     href={cert.url}
-                    className="mt-7 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition-colors duration-300"
+                    className="mt-7 inline-block bg-blue-600 text-white px-4 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
                   >
                     Show Credential
                   </a>

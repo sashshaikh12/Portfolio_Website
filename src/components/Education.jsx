@@ -12,7 +12,7 @@ const Education = () => {
       </div>
       <VerticalTimeline>
         <VerticalTimelineElement
-          className="vertical-timeline-element--work font-[Poppins]"
+          className="vertical-timeline-element--work font-[Poppins] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           contentStyle={{ background: 'rgb(63, 81, 181)', color: '#fff', borderRadius: '50px', border: '2px solid black' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="2011 - 2020"
@@ -25,13 +25,13 @@ const Education = () => {
             I joined school for the first time in grade 2, and spent the next 9 years learning, growing, and making memories. I was actively involved in extracurricular activities, such as sports, music, and dance, and participated in various competitions and events. I also developed a strong foundation in academics, with a focus on science and mathematics.
           </p>
           <div className="w-full flex justify-end">
-            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300" />
+            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" />
           </div>
           
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--work font-[Poppins]"
+          className="vertical-timeline-element--work font-[Poppins] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           contentStyle={{ background: 'rgb(63, 81, 181)', color: '#fff', borderRadius: '50px', border: '2px solid black' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="2020 - 2022"
@@ -44,12 +44,12 @@ const Education = () => {
             After completing high school at Mount Carmel Central School, I took a significant step by joining TLC, where I studied PCMC. This marked the first time I changed schools after spending 9 wonderful years at Mount Carmel. At TLC, I had the opportunity to meet incredible people from various parts of the district—like-minded individuals who shared a passion for science and were a joy to be around.
           </p>
           <div className="w-full flex justify-end">
-            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300" />
+            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" />
           </div>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--work font-[Poppins]"
+          className="vertical-timeline-element--work font-[Poppins] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           contentStyle={{ background: 'rgb(63, 81, 181)', color: '#fff', borderRadius: '50px', border: '2px solid black' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="2020 - 2022"
@@ -62,12 +62,12 @@ const Education = () => {
             During my PUC, I was also part of CFAL, a renowned coaching center that prepares students for competitive exams like JEE and NEET. The best part? It was managed by the TLC staff, which meant many of my coaching classmates were also my PU friends! This made preparing for competitive exams an enjoyable and collaborative experience, surrounded by motivated peers who excelled in their subjects. We studied together, attended classes side by side, and created countless memories. Those two pivotal years of my life were made adventurous and unforgettable by the incredible people I met at CFAL.
           </p>
           <div className="w-full flex justify-end">
-            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300" />
+            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" />
           </div>
         </VerticalTimelineElement>
 
         <VerticalTimelineElement
-          className="vertical-timeline-element--work font-[Poppins]"
+          className="vertical-timeline-element--work font-[Poppins] transform transition-transform duration-300 hover:scale-105 hover:shadow-xl"
           contentStyle={{ background: 'rgb(63, 81, 181)', color: '#fff', borderRadius: '50px', border: '2px solid black' }}
           contentArrowStyle={{ borderRight: '7px solid  rgb(33, 150, 243)' }}
           date="2022 - 2026"
@@ -80,7 +80,7 @@ const Education = () => {
             Thanks to CFAL, I achieved an impressive 97 percentile in JEE Mains. However, my passion for Computer Science and Engineering (CSE) led me to secure a seat at PES University, Bangalore, RR Campus, through a decent rank in the KCET exam. This marks my first time living away from my hometown, making this journey even more adventurous. Now, I’m pursuing CSE surrounded by a fantastic group of people, and I’m excited for the next four years filled with learning, growth, and unforgettable experiences.
           </p>
           <div className="w-full flex justify-end">
-            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300" />
+            <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" />
           </div>
         </VerticalTimelineElement>
       </VerticalTimeline>

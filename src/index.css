@@ -40,3 +40,12 @@ body {
     font-size: 22px;
   }
 }
+
+/* Custom CSS for icon hover effect */
+.hover-effect {
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover-effect:hover {
+  transform: translateY(-5px) scale(1.1);
+}
