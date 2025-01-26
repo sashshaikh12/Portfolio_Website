@@ -24,7 +24,7 @@ function Experience() {
   ];
 
   return (
-    <div className="text-white mt-4 font-[Poppins] w-full">
+    <div className="text-white mt-4 font-[Poppins] w-full" id="Experience">
       <h1 className="text-center sm:text-left sm:pl-16 pt-16 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Experience</h1>
       <h2 className="text-center text-[15px] md:text-[18px] font-[100] pt-10 sm:text-left sm:pl-16">"Experience is not what happens to you; it’s what you do with what happens to you."
 – Aldous Huxley</h2>

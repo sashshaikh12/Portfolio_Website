@@ -75,7 +75,7 @@ function About() {
     ];
 
   return (
-    <div className="text-white bg-[#080808] mt-4 font-[Poppins] w-full">
+    <div className="text-white bg-[#080808] mt-4 font-[Poppins] w-full" id="About">
         <h3 className="lg:hidden pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600] pl-10">About Me</h3>
       <div className="max-w-[1240px] mx-auto grid grid-cols-1 lg:grid-cols-2 gap-28">
         <div className="flex flex-col justify-center px-12">

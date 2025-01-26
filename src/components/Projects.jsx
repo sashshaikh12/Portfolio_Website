@@ -46,7 +46,7 @@ function Projects() {
   ];
 
   return (
-    <div className="text-white mt-24 font-[Poppins] w-full bg-[#080808]">
+    <div className="text-white mt-24 font-[Poppins] w-full bg-[#080808]" id="Projects">
       <div className="flex max-w-[800px] flex-col mb-16">
         <h1 className= "text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Projects</h1>
         <h3 className="text-center text-[22px] font-[400] pt-10 sm:text-left sm:pl-16">What I've Built So Far</h3>

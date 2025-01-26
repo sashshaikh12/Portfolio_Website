@@ -14,12 +14,12 @@ function Navbar() {
     <div className="text-white flex justify-between items-center w-full max-w-none mx-auto px-4 bg-[#080808]  font-[Poppins] text-[15px] font-[500]">
         <img src = "namelogo.avif" alt = "logo picture" className="h-20 hover:cursor-pointer" />
         <ul className="hidden lg:flex flex-1 justify-center space-x-4 flex-wrap"> 
-            <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">About Me</li>
-            <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Experience</li>
-            <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Projects</li>
-            <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Education</li>
-            <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Certifications</li>
-            <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Contact</li>
+            <a href = "#About"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">About Me</li></a>
+            <a href = "#Experience"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Experience</li></a>
+            <a href = "#Projects"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Projects</li></a>
+            <a href = "#Education"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Education</li></a>
+            <a href = "#Certifications"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Certifications</li></a>
+            <a href = "#Contact"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Contact</li></a>
         </ul>
         <button className="hidden lg:block p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Resume</button>
         <div className="block lg:hidden">
@@ -29,13 +29,13 @@ function Navbar() {
           !showMenu ? "translate-x-0" : "-translate-x-full"
         }`}>
             <img src = "namelogo.avif" alt = "logo picture" className="h-20 m-4 hover:cursor-pointer" />
-            <ul className="uppercase p-4">
-                <li className="p-4 border-b border-gray-600 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">About Me</li>
-                <li className="p-4 border-b border-gray-600 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Experience</li>
-                <li className="p-4 border-b border-gray-600 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Projects</li>
-                <li className="p-4 border-b border-gray-600 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Education</li>
-                <li className="p-4 border-b border-gray-600 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Certifications</li>
-                <li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Contact</li>
+            <ul className="uppercase p-4 " onClick={handleMenu}>
+                <a href = "#About"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">About Me</li></a>
+                <a href = "#Experience"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Experience</li></a>
+                <a href = "#Projects"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Projects</li></a>
+                <a href = "#Education"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Education</li></a>
+                <a href = "#Certifications"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Certifications</li></a>
+                <a href = "#Contact"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Contact</li></a>
             </ul>
         </div>
     </div>
