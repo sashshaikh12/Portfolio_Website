@@ -11,7 +11,7 @@ function Navbar() {
     };
 
   return (
-    <div className="text-white flex justify-between items-center w-full max-w-none mx-auto px-4 bg-[#080808]  font-[Poppins] text-[15px] font-[500]">
+    <div className="sticky top-0 z-10 text-white flex justify-between items-center w-full max-w-none mx-auto px-4 bg-[#080808]  font-[Poppins] text-[15px] font-[500]">
         <a href="/"><img src = "namelogo.avif" alt = "logo picture" className="h-20 hover:cursor-pointer" /></a>
         <ul className="hidden lg:flex flex-1 justify-center space-x-4 flex-wrap"> 
             <a href = "#About"><li className="p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">About Me</li></a>
