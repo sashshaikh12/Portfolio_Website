@@ -27,9 +27,16 @@ body {
   font-size: 22px; /* Default size for icons */
 }
 
+.icon-size-hero{
+  font-size: 18px;
+}
+
 @media (min-width: 640px) {
   /* Size for icons when screen width is at least 640px (sm breakpoint) */
   .icon-size {
     font-size: 28px;
+  }
+  .icon-size-hero{
+    font-size: 22px;
   }
 }

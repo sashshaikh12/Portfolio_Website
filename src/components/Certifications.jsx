@@ -28,7 +28,7 @@ function Certifications() {
 
   return (
     <div className="text-white font-[Poppins] w-full bg-[#080808]">
-      <h1 className=" pb-16 text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Certifications</h1>
+      <h1 className="underline sm:no-underline pb-16 text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Certifications</h1>
       <div className="flex flex-wrap items-center sm:items-start md:pl-16 pt-8 gap-14">
         {certifications.map((cert, index) => (
           <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full  md:w-1/3 lg:w-1/4 sm:mb-28 mb-20">

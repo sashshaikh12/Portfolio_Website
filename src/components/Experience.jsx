@@ -32,14 +32,14 @@ function Experience() {
         {exp.map((experience, index) => (
           <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="text-center lg:text-left mb-4">
-              <p className="text-lg font-medium text-gray-400">{experience.StartDate} - {experience.EndDate}</p>
+              <p className="pb-4 text-lg font-medium text-gray-400">{experience.StartDate} - {experience.EndDate}</p>
             </div>
             <div className="flex items-center mb-7">
               <img src={experience.url} alt={experience.Company} className="h-12 w-12 mr-4 rounded-full border-2 border-gray-300" />
-              <h3 className="text-lg font-medium text-gray-300">{experience.Company}</h3>
+              <h3 className=" text-lg font-medium text-gray-300">{experience.Company}</h3>
             </div>
-            <h2 className="text-xl font-semibold mb-4">{experience.Role}</h2>
-            <p className="text-base text-gray-400 mb-4">{experience.Description}</p>
+            <h2 className="pt-2 text-xl font-semibold mb-4">{experience.Role}</h2>
+            <p className="pt-2 text-base text-gray-400 mb-4">{experience.Description}</p>
             <div className="flex justify-end">
               <FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300" />
             </div>

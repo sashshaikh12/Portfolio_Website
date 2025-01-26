@@ -14,13 +14,13 @@ function Hero() {
                 <p className="text-sm pt-6 md:pt-8 font-[Poppins] md:text-[17px] md:font-[400] text-gray-400">I'm a 3rd Year undergraduate student at PES University, Bangalore</p>
                 <p className="text-sm pt-4 md:pt-4 font-[Poppins] md:text-[17px] md:font-[400] text-gray-400">I pursue Computer Science Engineering and coding is my hobby!!!</p>
                 <div className="flex justify-center items-center pt-4 space-x-4 mt-7">
-                    <SiCodeforces size={22}/>
-                    <SiCodechef size={22}/>
-                    <SiLeetcode size={22}/>
-                    <SiGithub size={22}/>
-                    <SiLinkedin size={22}/>
+                    <SiCodeforces  className="icon-size-hero"/>
+                    <SiCodechef  className="icon-size-hero"/>
+                    <SiLeetcode  className="icon-size-hero"/>
+                    <SiGithub  className="icon-size-hero"/>
+                    <SiLinkedin  className="icon-size-hero"/>
                 </div>
-                <button className=" font-[Poppins] bg-[black] rounded-3xl w-[200px] font-medium h-[50px] mt-7 hover:bg-white hover:text-black border-white border-2">Download Resume</button>
+                <button className="w-[200px] h-[40px] font-[Poppins] bg-[black] rounded-3xl sm:w-[200px] font-light sm:font-medium sm:h-[50px] mt-7 hover:bg-white hover:text-black border-white border-2">Download Resume</button>
             </div>
         </div>
     );
