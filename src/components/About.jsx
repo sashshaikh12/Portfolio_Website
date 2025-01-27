@@ -1,4 +1,7 @@
 import React from "react";
+import { useRef } from 'react';
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from '@gsap/react';
 
 function About() {
 
@@ -73,6 +76,8 @@ function About() {
         },
 
     ];
+
+    var tl = gsap.timeline();
 
   return (
     <div className="text-white bg-[#080808] mt-4 font-[Poppins] w-full" id="About">
