@@ -5,6 +5,11 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useRef } from 'react';
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 function Projects() {
   const projects = [
@@ -45,10 +50,36 @@ function Projects() {
     }
   ];
 
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.from(".projectHeadingContainer", {
+      x: -200,
+      duration: 1.5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".projectHeadingContainer",
+        scroller: "body",
+        start: "top 60%",
+      }
+  });
+
+  gsap.from(".projectsContainer", {
+    duration: 1.5,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".projectsContainer",
+      scroller: "body",
+      start: "top 60%",
+    }
+});
+
+});
+
 
   return (
     <div className="text-white mt-24 font-[Poppins] w-full bg-[#080808]" id="Projects">
-      <div className="flex max-w-[800px] flex-col mb-16">
+      <div className="projectHeadingContainer flex max-w-[800px] flex-col mb-16">
         <h1 className= "text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Projects</h1>
         <h3 className="text-center text-[22px] font-[400] pt-10 sm:text-left sm:pl-16">What I've Built So Far</h3>
         <p className=" text-center text-[18px] font-[400] pt-6 text-gray-400 sm:text-left sm:pl-16">I've worked on a variety of projects that reflect my passion for solving real-world problems and building innovative solutions. From designing robust full-stack web applications to creating engaging games and interactive tools, my work combines creativity, technical expertise, and a focus on user experience.</p>
@@ -65,7 +96,7 @@ function Projects() {
 
         {projects.map((project, index) => (
           <SwiperSlide key={index}>
-          <div className="pb-24 flex justify-center h-full">
+          <div className="projectsContainer pb-24 flex justify-center h-full">
             <div className="bg-gray-800 flex flex-col justify-between items-center w-full max-w-[350px] min-w-[250px] h-auto p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 mx-4">
               <img
                 src={project.image_url}
