@@ -2,13 +2,47 @@ import React from "react";
 import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useRef } from 'react';
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const Education = () => {
+
+
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.from(".educationHeading", {
+      y: -100,
+      duration: 0.7,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".educationHeading",
+        scroller: "body",
+        start: "top 60%",
+      }
+  });
+
+  gsap.from(".educationDescription", {
+    x: 400,
+    duration: 0.7,
+    opacity: 0,
+    scrollTrigger: {
+      trigger: ".educationDescription",
+      scroller: "body",
+      start: "top 60%",
+    }
+});
+
+
+});
+
   return (
     <div className="text-white font-[Poppins] w-full" id="Education">
       <div className="flex max-w-[800px] flex-col mb-28">
-        <h1 className="text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Education</h1>
-        <h3 className="text-center text-[22px] font-[400] pt-10 sm:text-left sm:pl-16">A glimpse into my academic journey, highlighting the skills, knowledge, and experiences I’ve gained along the way.</h3>
+        <h1 className="educationHeading text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Education</h1>
+        <h3 className="educationDescription text-center text-[22px] font-[400] pt-10 sm:text-left sm:pl-16">A glimpse into my academic journey, highlighting the skills, knowledge, and experiences I’ve gained along the way.</h3>
       </div>
       <VerticalTimeline>
         <VerticalTimelineElement
