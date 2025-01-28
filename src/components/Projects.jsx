@@ -115,6 +115,7 @@ function Projects() {
                 {project.url && (
                     <a
                       href={project.url}
+                      target="_blank" rel="noopener noreferrer"
                       className="mt-auto inline-block bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
                     >
                       Source Code
