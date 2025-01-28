@@ -1,5 +1,9 @@
-import React from "react";
+import React, { use } from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
+import { useRef } from 'react';
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Experience() {
   const exp = [
@@ -25,14 +29,54 @@ function Experience() {
     }
   ];
 
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+      gsap.from(".experienceHeading", {
+          x: 500,
+          duration: 2,
+          opacity: 0,
+          scrollTrigger: {
+            trigger: ".experienceHeading",
+            scroller: "body",
+            start: "top 60%",
+          }
+      });
+
+      gsap.from(".experienceQuote", {
+        x: 400,
+        duration: 1.5,
+        opacity: 0,
+        rotateY: 360,
+        scrollTrigger: {
+          trigger: ".experienceQuote",
+          scroller: "body",
+          start: "top 60%",
+        }
+    });
+
+    gsap.from(".experienceCard", {
+      y: -500,
+      duration: 2,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".experienceCard",
+        scroller: "body",
+        start: "top 60%",
+      }
+  });
+
+  });
+
+
   return (
     <div className="text-white mt-4 font-[Poppins] w-full" id="Experience">
-      <h1 className="text-center sm:text-left sm:pl-16 pt-16 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Experience</h1>
-      <h2 className="text-center text-[15px] md:text-[18px] font-[100] pt-10 sm:text-left sm:pl-16">"Experience is not what happens to you; it’s what you do with what happens to you."
+      <h1 className="experienceHeading text-center sm:text-left sm:pl-16 pt-16 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Experience</h1>
+      <h2 className="experienceQuote text-center text-[15px] md:text-[18px] font-[100] pt-10 sm:text-left sm:pl-16">"Experience is not what happens to you; it’s what you do with what happens to you."
 – Aldous Huxley</h2>
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 p-4 pt-28">
         {exp.map((experience, index) => (
-          <div key={index} className="bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+          <div key={index} className="experienceCard bg-gray-800 p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
             <div className="text-center lg:text-left mb-4">
               <p className="pb-4 text-lg font-medium text-gray-400">{experience.StartDate} - {experience.EndDate}</p>
             </div>
