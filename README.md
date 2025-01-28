@@ -7,7 +7,7 @@ First, clone the repository:
 
 ```
 git clone https://github.com/sashshaikh12/Portfolio_Website.git
-cd Portfolio
+cd Portfolio_Website
 ```
 
 
