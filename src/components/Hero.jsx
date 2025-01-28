@@ -29,7 +29,7 @@ function Hero() {
 
         tl.from(".reactTyped", {
             opacity: 0,
-            duration: 0.3,
+            duration: 0.6,
             delay: 0.05,
             ease: "power2.out",
         });
@@ -37,14 +37,14 @@ function Hero() {
         tl.from(".heroPara", {
             x: -100,
             opacity: 0,
-            duration: 0.3,
+            duration: 0.6,
             ease: "power2.out",
         });
 
         tl.from(".codingIcons", {
             x: 100,
             opacity: 0,
-            duration: 0.3,
+            duration: 0.6,
             ease: "power2.out",
         });
 
