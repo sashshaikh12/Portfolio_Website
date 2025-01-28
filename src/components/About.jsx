@@ -82,37 +82,69 @@ function About() {
 
     useGSAP(() => {
         gsap.from(".aboutHeading", {
-            x: -100,
+            x: -200,
             duration: 1,
             opacity: 0,
             scrollTrigger: {
                 trigger: ".aboutHeading",
                 scroller: "body",
-                markers: true,
                 start: "top 60%",
             },
         });
 
         gsap.from(".greetingWithName", {
-            x: -100,
-            duration: 1,
+            x: -200,
+            duration: 0.8,
             opacity: 0,
             scrollTrigger: {
                 trigger: ".greetingWithName",
                 scroller: "body",
-                markers: true,
                 start: "top 60%",
             },
         });
 
         gsap.from(".myDescription", {
-            x: -100,
-            duration: 1,
+            x: -200,
+            duration: 0.8,
             opacity: 0,
             scrollTrigger: {
                 trigger: ".myDescription",
                 scroller: "body",
-                markers: true,
+                start: "top 60%",
+            },
+        });
+
+        gsap.from(".aboutMePic", {
+            x: 200,
+            duration: 1,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".aboutMePic",
+                scroller: "body",
+                start: "top 60%",
+            },
+        });
+
+        gsap.from(".techSkillsHeading", {
+            x: -200,
+            duration: 1,
+            opacity: 0,
+            rotate: 360,
+            scrollTrigger: {
+                trigger: ".techSkillsHeading",
+                scroller: "body",
+                start: "top 60%",
+            },
+        });
+
+        gsap.from(".techSkillsContainer", {
+            // x: -200,
+            duration: 3,
+            delay: 0.05,
+            opacity: 0,
+            scrollTrigger: {
+                trigger: ".techSkillsContainer",
+                scroller: "body",
                 start: "top 60%",
             },
         });
@@ -135,10 +167,10 @@ function About() {
 
     {/* Tech skills */}
 
-    <h1 className="pt-28 text-[22px] font-[600] text-center mx-auto">Tech Skills</h1>
+    <h1 className="techSkillsHeading pt-28 text-[22px] font-[600] text-center mx-auto">Tech Skills</h1>
     <div className="flex flex-wrap justify-center pt-10 gap-4 pb-24 ">
         {skills.map((skill) => (
-                <div key={skill.name} className="bg-gray-800 p-4 rounded-lg flex flex-col items-center  w-20 sm:w-40 hover:rounded-full hover:bg-white hover:text-black">
+                <div key={skill.name} className="techSkillsContainer bg-gray-800 p-4 rounded-lg flex flex-col items-center  w-20 sm:w-40 hover:rounded-full hover:bg-white hover:text-black">
                     <img src={skill.url} alt={skill.name} className="h-8 w-8 sm:h-12 sm:w-12 object-contain" />
                     <h2 className="mt-4 text-xs sm:text-lg font-medium">{skill.name}</h2>
                 </div>
