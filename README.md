@@ -2,10 +2,11 @@
 
 ## Commands to run this:
 
+
 First, clone the repository:
 
 ```
-git clone [git@github.com:Anga205/Portfolio.git](https://github.com/sashshaikh12/Portfolio_Website.git)
+git clone https://github.com/sashshaikh12/Portfolio_Website.git
 cd Portfolio
 ```
 
