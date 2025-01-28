@@ -24,4 +24,4 @@ npm start
 ```
 
 ### PS
-This repo will be under devlopement constantly!
+This repo will be under development constantly!
