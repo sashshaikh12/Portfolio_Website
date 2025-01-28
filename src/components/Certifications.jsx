@@ -1,4 +1,9 @@
-import react from "react";
+import react, {useEffect} from "react";
+import { useRef } from 'react';
+import gsap from 'gsap'; // <-- import GSAP
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 function Certifications() {
 
@@ -26,12 +31,40 @@ function Certifications() {
     },
   ];
 
+  gsap.registerPlugin(ScrollTrigger);
+
+  useGSAP(() => {
+    gsap.from(".certificationsHeading", {
+      x: -200,
+      duration: 1.5,
+      opacity: 0,
+      scrollTrigger: {
+        trigger: ".certificationsHeading",
+        scroller: "body",
+        start: "top 60%",
+      }
+  });
+
+  gsap.from(".certificationCard", {
+    duration: 1.5,
+    opacity: 0,
+    delay: 0.1,
+    stagger: 0.5,
+    scrollTrigger: {
+      trigger: ".certificationCard",
+      scroller: "body",
+      start: "top 60%",
+    }
+});
+
+});
+
   return (
     <div className="text-white font-[Poppins] w-full bg-[#080808]" id="Certifications">
-      <h1 className="underline sm:no-underline pb-16 text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Certifications</h1>
-      <div className="flex flex-wrap items-center sm:items-start md:pl-16 pt-8 gap-14">
+      <h1 className="certificationsHeading underline sm:no-underline pb-16 text-center sm:text-left sm:pl-16 pt-24 text-3xl font-medium sm:text-[36px] sm:font-[700] md:text-[45px] md:font-[600]">Certifications</h1>
+      <div className="certificationsContainer flex flex-wrap items-center sm:items-start md:pl-16 pt-8 gap-14">
         {certifications.map((cert, index) => (
-          <div key={index} className="bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full md:w-1/3 lg:w-1/4 sm:mb-28 mb-20 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+          <div key={index} className="certificationCard bg-gray-800 rounded-lg shadow-lg overflow-hidden w-full md:w-1/3 lg:w-1/4 sm:mb-28 mb-20 transform transition-transform duration-300 hover:scale-105 hover:shadow-xl">
             <div className="bg-gray-700 h-48 flex items-center justify-center">
               <img src={cert.imageUrl} alt={cert.title} className="w-full h-full object-contain" />
             </div>

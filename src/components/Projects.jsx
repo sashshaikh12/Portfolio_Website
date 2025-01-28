@@ -66,6 +66,7 @@ function Projects() {
 
   gsap.from(".projectsContainer", {
     duration: 1.5,
+    delay: 0.2,
     opacity: 0,
     scrollTrigger: {
       trigger: ".projectsContainer",
