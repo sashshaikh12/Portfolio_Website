@@ -38,7 +38,7 @@ function Experience() {
           opacity: 0,
           scrollTrigger: {
             trigger: ".experienceHeading",
-            scroller: "body",
+            // scroller: "body",
             start: "top 60%",
           }
       });
@@ -50,7 +50,7 @@ function Experience() {
         rotateY: 360,
         scrollTrigger: {
           trigger: ".experienceQuote",
-          scroller: "body",
+          // scroller: "body",
           start: "top 60%",
         }
     });
@@ -61,7 +61,7 @@ function Experience() {
       opacity: 0,
       scrollTrigger: {
         trigger: ".experienceCard",
-        scroller: "body",
+        // scroller: "body",
         start: "top 60%",
       }
   });
