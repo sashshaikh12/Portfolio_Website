@@ -3,6 +3,7 @@ import { useRef } from 'react';
 import gsap from 'gsap'; // <-- import GSAP
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaAngleDoubleUp } from "react-icons/fa";
 
 
 function About() {
@@ -150,6 +151,13 @@ function About() {
             },
         });
 
+        ScrollTrigger.create({
+            trigger: ".myDescription",
+            start: "top 60%",
+            onEnter: () => gsap.to(".scrollButton", { opacity: 1, visibility: "visible" }),
+            onLeaveBack: () => gsap.to(".scrollButton", { opacity: 0, visibility: "hidden" }),
+          });
+
     });
 
   return (
@@ -164,6 +172,9 @@ function About() {
             </p>
         </div>
         <img src = "CodingPic.jpg" alt = "coding picture" className="aboutMePic pt-10 lg:pt-48 mx-auto lg:pr-10 h-full object-cover order-first lg:order-none"/>
+        <a className="scrollButton fixed bottom-4 right-4 bg-white text-black px-4 py-2 rounded-xl shadow-lg opacity-0 visibility-hidden transition-opacity duration-300 hover:cursor-pointer z-10" href="#">
+        <FaAngleDoubleUp />
+      </a>
       </div>
 
     {/* Tech skills */}
