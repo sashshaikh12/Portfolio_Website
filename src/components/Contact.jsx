@@ -37,7 +37,7 @@ gsap.from(".contactIcon", {
     duration: 0.3,
     opacity: 0,
     rotate: 360,
-    stagger: 0.5,
+    stagger: 0.35,
     scrollTrigger: {
       trigger: ".contactDescription",
       start: "top 60%",

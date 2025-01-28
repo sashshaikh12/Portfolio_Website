@@ -46,10 +46,10 @@ function Certifications() {
   });
 
   gsap.from(".certificationCard", {
-    duration: 1.5,
+    duration: 0.3,
     opacity: 0,
-    delay: 0.1,
-    stagger: 0.5,
+    // delay: 0.1,
+    stagger: 0.3,
     scrollTrigger: {
       trigger: ".certificationCard",
       scroller: "body",

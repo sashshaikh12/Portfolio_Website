@@ -21,7 +21,7 @@ function Hero() {
         tl.from(".char", {
             y: 50,
             opacity: 0,
-            duration: 0.5,
+            duration: 0.4,
             stagger: 0.05,
             ease: "power2.out",
             display: "inline-block",
@@ -29,7 +29,7 @@ function Hero() {
 
         tl.from(".reactTyped", {
             opacity: 0,
-            duration: 0.5,
+            duration: 0.3,
             delay: 0.05,
             ease: "power2.out",
         });
@@ -37,21 +37,21 @@ function Hero() {
         tl.from(".heroPara", {
             x: -100,
             opacity: 0,
-            duration: 0.5,
+            duration: 0.3,
             ease: "power2.out",
         });
 
         tl.from(".codingIcons", {
             x: 100,
             opacity: 0,
-            duration: 0.5,
+            duration: 0.3,
             ease: "power2.out",
         });
 
         tl.from(".resumeButton", {
             y: -200,
             opacity: 0,
-            duration: 1.5,
+            duration: 1,
             ease: "bounce.out",
         });
     });
