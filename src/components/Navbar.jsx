@@ -36,7 +36,7 @@ function Navbar() {
         </ul>
         <a href="https://drive.google.com/file/d/1YAPP8R59e5zHDXWGUG4RyST61aZZZh8a/view?usp=sharing" target="_blank" rel="noopener noreferrer" className="navResume hidden lg:block p-4 hover:bg-gray-700 hover:rounded-xl hover:cursor-pointer">Resume</a>
         <div className="block lg:hidden">
-            {showMenu ? <GiHamburgerMenu size={20} onClick={handleMenu}/> : <IoCloseSharp size={20} onClick={handleMenu}/>}
+            {showMenu ? <GiHamburgerMenu size={20} onClick={handleMenu} className="cursor-pointer"/> : <IoCloseSharp size={20} onClick={handleMenu} className="cursor-pointer"/>}
         </div>
         <div className={`fixed left-0 top-0 w-[60%] border-r h-full border-r-gray-900 bg-[#080808] ease-in-out duration-500 ${
           !showMenu ? "translate-x-0" : "-translate-x-full"
