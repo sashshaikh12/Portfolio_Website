@@ -128,10 +128,9 @@ function About() {
         });
 
         gsap.from(".techSkillsHeading", {
-            x: -200,
+            y: 50,
             duration: 1,
             opacity: 0,
-            rotate: 360,
             scrollTrigger: {
                 trigger: ".techSkillsHeading",
                 scroller: "body",
@@ -168,7 +167,7 @@ function About() {
             <h3 className="aboutHeading hidden lg:block lg:pt-24 lg:text-[45px] lg:font-[700]">About Me</h3>
             <h3 className="greetingWithName text-[22px] font-[400] lg:pt-10">Hey, I'm <span className="font-[600]">Hashir Shaikh Suleman</span></h3>
             <p className="myDescription text-[18px] font-[400] pt-6 text-gray-400">
-                Hello! I am a Computer Science Undergraduate at PES University, Bangalore. I am currently in 6th semester. I am passionate about competitive programming and web development. I have been coding problems for about 3 years now and I enjoy it even more now as I deep diver into interesting data structures and algorithms. I have also had a keen interest in web development, and in the recent times I have been working on my development skills as well, always learning new things. apart from tech and coding hobbies, I truly enjoy playing outdoor sports, especially basketball. I have been a steph curry fan always!<br/>Keep following me, I will be sharing my journey as a developer here from time to time!!!
+                Hello! I am a Computer Science Undergraduate at PES University, Bangalore. I am currently in 6th semester. I am passionate about competitive programming and web development. I have been coding problems for about 3 years now and I enjoy it even more now as I dive deeper into interesting data structures and algorithms. I have also had a keen interest in web development, and in the recent times I have been working on my development skills as well, always learning new things. Apart from tech and coding hobbies, I truly enjoy playing outdoor sports, especially basketball. I have been a steph curry fan always!<br/>Keep following me, I will be sharing my journey as a developer here from time to time!!!
             </p>
         </div>
         <img src = "CodingPic.jpg" alt = "coding picture" className="aboutMePic pt-10 lg:pt-48 mx-auto lg:pr-10 lg:h-full object-cover order-first lg:order-none"/>

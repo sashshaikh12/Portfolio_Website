@@ -44,10 +44,9 @@ function Experience() {
       });
 
       gsap.from(".experienceQuote", {
-        x: 400,
-        duration: 1.5,
+        x: 500,
+        duration: 2,
         opacity: 0,
-        rotateY: 360,
         scrollTrigger: {
           trigger: ".experienceQuote",
           // scroller: "body",

@@ -17,7 +17,7 @@ function App() {
   React.useEffect(() => {
     setTimeout(() => {
       setpreload(false);
-    }, 13000);
+    }, 10000);
   }, []);
 
   return (
