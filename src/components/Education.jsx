@@ -56,7 +56,7 @@ const Education = () => {
           <h1 className="vertical-timeline-element-title" style={{fontSize : "20px", fontWeight: "600"}}> Mount Carmel Central School</h1>
           <h4 className="vertical-timeline-element-subtitle pt-4" style={{fontSize : "18px", fontWeight : "400"}}>High School</h4>
           <p style={{fontSize: '15px', fontWeight : "300"}} className="pb-4">
-            I joined school for the first time in grade 2, and spent the next 9 years learning, growing, and making memories. I was actively involved in extracurricular activities, such as sports, music, and dance, and participated in various competitions and events. I also developed a strong foundation in academics, with a focus on science and mathematics.
+            I joined school for the first time in Grade 2, and spent the next 9 years learning, growing, and making memories. I was actively involved in extracurricular activities, such as sports, music, and dance, and participated in various competitions and events. I also developed a strong foundation in academics, with a focus on Science and Mathematics.
           </p>
           <div className="w-full flex justify-end">
             <a href = "https://www.mtcarmelcs.org/" target="_blank" rel="noopener noreferrer"><FaExternalLinkAlt size={24} className="text-gray-400 hover:text-white transition-colors duration-300 hover:cursor-pointer" /></a>

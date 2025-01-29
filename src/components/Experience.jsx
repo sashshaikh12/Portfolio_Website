@@ -13,17 +13,17 @@ function Experience() {
       Role: "Technical Domain Member",
       Company: "Alcoding Club",
       Description:
-        "Alcoding Club is a technical club of my college and the official Competitive Programming club of the college. I am a part of Technical Domain in this club. I help in organising Club hackathons and competitions. I also help in framing questions for the competitions and help in organising workshops and webinars",
+        "Alcoding club is the official Competitive Programming club of the college. I work in Technical Domain of the club. I help in organising Club hackathons and competitions. I also help in framing questions for the competitions and help in organising workshops and webinars.",
       url: "alcoding.png",
       site_url: "https://clubs.pes.edu/the-alcoding-club/",
     },
     {
       StartDate: "March 2023",
-      EndDate: "Present",
+      EndDate: "Present", 
       Role: "Mentor",
       Company: "Nexus Club",
       Description:
-        "Nexus Club is a technical club of my college. I am a mentor of competitive programming in this club. I teach students about data structures and algorithms and help them to improve their problem solving skills. I also help in organising Club hackathons and competitions",
+        "Nexus Club is an another technical club of my college. I am a mentor of competitive programming in this club. I teach students about data structures and algorithms and help them improve their problem solving skills. I also help in organising Club hackathons and competitions.",
       url: "nexus.png",
       site_url: "https://nexus-pes.vercel.app/",
     }
