@@ -77,6 +77,10 @@ function About() {
             name: "vercel",
             url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vercel/vercel-original.svg"
         },
+        {
+            name: "mongodb",
+            url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
+        },
 
     ];
 
