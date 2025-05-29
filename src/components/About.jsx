@@ -81,6 +81,10 @@ function About() {
             name: "mongodb",
             url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg"
         },
+        {
+            name: "React Native",
+            url: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original-wordmark.svg"
+        }
 
     ];
 
