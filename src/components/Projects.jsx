@@ -5,7 +5,6 @@ import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
-import { useRef } from 'react';
 import gsap from 'gsap'; // <-- import GSAP
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -13,6 +12,13 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 function Projects() {
   const projects = [
+    {
+      url: "https://play.google.com/store/apps/details?id=com.wirasat.tayseerulfaraiz",
+      title: "Tayseer-ul-Faraiz",
+      description: "Tayseer-ul-Faraiz is a fully offline, multilingual mobile app developed using React Native, Expo, NativeWind, and i18n to simplify the complex process of Islamic inheritance distribution. Designed to assist users who may struggle with mathematical calculations, the app reduces what typically takes 1–2 hours to just 5–15 minutes with an intuitive, user-friendly interface. With just one button click, users can calculate inheritance shares by simply entering the number of heirs. The app clearly shows the distribution breakdown and the reasoning behind it, making Islamic inheritance accessible and understandable to all. Arabic support is also planned for future updates. 📱 500+ downloads across 13 countries, empowering communities with accessible tech.",
+      techStack: "React Native, Expo, NativeWind, i18n",
+      image_url: "Tayseer_ul_Faraiz.jpg",
+    },
     {
       url: "https://github.com/sashshaikh12/campus-event-management",
       title: "Campus Resource and Event Management System",
@@ -102,7 +108,7 @@ function Projects() {
               <img
                 src={project.image_url}
                 alt={project.title}
-                className="w-full h-[200px] object-cover rounded-lg mb-4"
+                className="w-full h-[200px] object-contain rounded-lg mb-4"
               />
               <div className="flex flex-col flex-grow">
                 <h2 className="text-xl font-semibold mb-7 text-center">{project.title}</h2>
@@ -116,7 +122,7 @@ function Projects() {
                     <a
                       href={project.url}
                       target="_blank" rel="noopener noreferrer"
-                      className="mt-auto inline-block bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300"
+                      className="mt-auto inline-block bg-blue-600 text-white px-6 py-2 rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 text-center"
                     >
                       Source Code
                     </a>

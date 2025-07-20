@@ -9,7 +9,7 @@ function Experience() {
   const exp = [
     {
       StartDate: "November 2024",
-      EndDate: "Present",
+      EndDate: "May 2025",
       Role: "Technical Domain Member",
       Company: "Alcoding Club",
       Description:
@@ -19,7 +19,7 @@ function Experience() {
     },
     {
       StartDate: "March 2023",
-      EndDate: "Present", 
+      EndDate: "May 2025", 
       Role: "Mentor",
       Company: "Nexus Club",
       Description:
